@@ -1,5 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #eaebed;
+  font-family: "Roboto";
 }
 
 .main-container {
@@ -15,4 +22,85 @@ body {
   width: 100%;
   height: 100%;
   border: 1px solid #eaebed;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+.navigation > * {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 25px 20px 25px 20px;
+}
+
+article:first-child {
+  height: 171px;
+  position: relative;
+}
+
+article:first-child .fa-user-circle {
+  color: rgba(0, 0, 0, 0.24);
+  font-size: 40px;
+  padding: 15px 0;
+}
+
+article:first-child h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.87);
+  letter-spacing: 0.15px;
+}
+
+article:first-child p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+  float: left;
+}
+
+article:first-child .fa-sort-down {
+  color: rgba(0, 0, 0, 0.54);
+  right: 20px;
+  bottom: 20px;
+  float: right;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 21px;
+  padding: 10px 10px;
+}
+article:last-child li:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.87);
+}
+li:hover {
+  color: #2196f3;
+  background: #e3f2fd;
+  border-radius: 4px;
+}
+
+li .fa-bookmark {
+  color: rgba(0, 0, 0, 0.54);
+  padding-right: 30px;
+}
+
+article:last-child {
+  border-bottom: none;
+  padding-top: 12px;
+}
+
+article:last-child h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  color: #9e9e9e;
 }
