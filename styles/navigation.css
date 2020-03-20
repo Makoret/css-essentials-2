@@ -86,6 +86,10 @@ li:hover {
   border-radius: 4px;
 }
 
+li:hover > .fa-bookmark {
+  color: #2196f3;
+}
+
 li .fa-bookmark {
   color: rgba(0, 0, 0, 0.54);
   padding-right: 30px;
