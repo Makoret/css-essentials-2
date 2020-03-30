@@ -1,20 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: SF Pro Text;
+}
 body {
   background-color: #eaebed;
+  color: white;
 }
 
 .main-container {
   width: 375px;
   height: 812px;
   background-color: #f8777d;
-  border-radius: 10px;
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .notification-bar {
-  margin: 14px 20px 0px 20px;
+  margin: 10px 20px 0px 20px;
   height: 44px;
+}
+
+.options-bar {
+  margin: 5px 20px 30px 20px;
+  height: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.options-bar label {
+  margin-left: 10px;
+}
+
+#balance {
+  text-align: center;
+}
+
+#cog {
+  float: left;
 }
 
 .clock {
@@ -23,4 +47,176 @@ body {
 
 .icons {
   float: right;
+  align-content: stretch;
+}
+
+nav:first-of-type {
+  height: 45px;
+  width: fit-content;
+  margin-top: 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+nav:first-of-type ul li {
+  font-size: 13px;
+  text-align: center;
+  width: 90px;
+  display: table-cell;
+  border-bottom-style: solid;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 11px;
+}
+
+nav:first-of-type ul li:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+nav:first-of-type ul {
+  list-style: none;
+  text-align: center;
+}
+#status {
+  margin-top: 10px;
+}
+div div span:nth-child(1) {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+div div span:nth-child(2) {
+  letter-spacing: -0.05em;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+div div span:nth-child(3) {
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 19px;
+  opacity: 0.8;
+}
+
+div div span {
+  display: block;
+  text-align: center;
+}
+
+#dots {
+  text-align: center;
+  margin-top: 31px;
+  margin-bottom: 4px;
+}
+
+#dots i {
+  font-size: 7px;
+  opacity: 0.3;
+}
+
+#dots i:hover {
+  opacity: 1;
+}
+
+#account {
+  overflow: scroll;
+  height: 519px;
+}
+
+#account::-webkit-scrollbar {
+  display: none;
+}
+
+#account ul {
+  display: list-item;
+  list-style: none;
+}
+
+#account ul li {
+  height: 82px;
+  width: 342px;
+  background: #ffffff;
+  border-radius: 8px;
+  margin: 8px 16px 8px 16px;
+  text-align: left;
+  display: inline-grid;
+}
+
+#account ul li span {
+  letter-spacing: -0.02em;
+  color: #232c2d;
+  opacity: 0.6;
+  margin-left: 12px;
+  margin-top: 12px;
+  float: left;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#account ul li:nth-child(1) p {
+  letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  color: #65bcbf;
+  margin-left: 12px;
+}
+#account ul li:nth-child(2) p {
+  letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  color: #f8777d;
+  margin-left: 12px;
+}
+#account ul li:nth-child(3) p {
+  letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  color: #65bcbf;
+  margin-left: 12px;
+}
+#account ul li:nth-child(4) p {
+  letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  color: #65bcbf;
+  margin-left: 12px;
+}
+#account ul li:nth-child(5) p {
+  letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  color: #f8777d;
+  margin-left: 12px;
+}
+#account ul li:nth-child(6) p {
+  letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  color: #f8777d;
+  margin-left: 12px;
 }
